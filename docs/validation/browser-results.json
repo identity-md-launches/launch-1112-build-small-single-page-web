@@ -1,0 +1,165 @@
+{
+  "checks": [
+    "Relative subpath export loads and default quote matches model",
+    "No horizontal overflow at 1200, 900, 752, 600, 360 and 320 CSS pixels",
+    "All liquidity presets update reserve, output and impact",
+    "Slippage changes only minimum; fee changes quote and charged fee",
+    "Comparison exposes higher output and a second chart line, then hides",
+    "Empty, negative, zero, comma, oversized and exponent inputs get recoverable errors; stale quote removed",
+    "Minimum and maximum supported inputs remain finite and fit at 320px, including comparison",
+    "Keyboard skip link, presets, native slider, selects, reset, comparison and disclosure work in order",
+    "Axe WCAG A/AA scans at 1200px and 360px report zero violations",
+    "Computed rendered text/background pairs meet 4.5:1 contrast",
+    "Reduced motion removes button transitions",
+    "200% text enlargement at desktop reflows without overflow (not native browser zoom)",
+    "Production export operates in an opaque-origin iframe with sandbox=\"allow-scripts\" at 1200px and 360px",
+    "Loaded iframe continues calculating with network offline, including fractional input .5",
+    "No external requests, failed resources or browser console errors"
+  ],
+  "layouts": [
+    {
+      "label": "1200",
+      "viewport": 1200,
+      "document": 1200,
+      "overflowing": []
+    },
+    {
+      "label": "900",
+      "viewport": 900,
+      "document": 900,
+      "overflowing": []
+    },
+    {
+      "label": "752",
+      "viewport": 752,
+      "document": 752,
+      "overflowing": []
+    },
+    {
+      "label": "600",
+      "viewport": 600,
+      "document": 600,
+      "overflowing": []
+    },
+    {
+      "label": "360",
+      "viewport": 360,
+      "document": 360,
+      "overflowing": []
+    },
+    {
+      "label": "320",
+      "viewport": 320,
+      "document": 320,
+      "overflowing": []
+    },
+    {
+      "label": "1200",
+      "viewport": 1200,
+      "document": 1200,
+      "overflowing": []
+    },
+    {
+      "label": "360",
+      "viewport": 360,
+      "document": 360,
+      "overflowing": []
+    },
+    {
+      "label": "320: amount 1000000, reserve 1000000",
+      "viewport": 320,
+      "document": 320,
+      "overflowing": []
+    },
+    {
+      "label": "320: amount 1000000, reserve 0.01",
+      "viewport": 320,
+      "document": 320,
+      "overflowing": []
+    },
+    {
+      "label": "320: amount 0.01, reserve 1000000",
+      "viewport": 320,
+      "document": 320,
+      "overflowing": []
+    },
+    {
+      "label": "1200",
+      "viewport": 1200,
+      "document": 1200,
+      "overflowing": []
+    },
+    {
+      "label": "360",
+      "viewport": 360,
+      "document": 360,
+      "overflowing": []
+    },
+    {
+      "label": "1200: 200% text enlargement",
+      "viewport": 1200,
+      "document": 1200,
+      "overflowing": []
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "externalRequests": [],
+  "accessibility": [
+    {
+      "width": 1200,
+      "violations": []
+    },
+    {
+      "width": 360,
+      "violations": []
+    }
+  ],
+  "contrast": [
+    {
+      "selector": ".intro-copy p",
+      "foreground": "rgb(93, 104, 93)",
+      "background": "rgb(245, 246, 240)",
+      "ratio": 5.36
+    },
+    {
+      "selector": ".quote-caption",
+      "foreground": "rgb(93, 104, 93)",
+      "background": "rgb(252, 253, 249)",
+      "ratio": 5.7
+    },
+    {
+      "selector": ".compare-button",
+      "foreground": "rgb(252, 253, 249)",
+      "background": "rgb(35, 77, 58)",
+      "ratio": 9.37
+    },
+    {
+      "selector": ".impact-tag",
+      "foreground": "rgb(122, 75, 8)",
+      "background": "rgb(247, 237, 206)",
+      "ratio": 6.33
+    },
+    {
+      "selector": ".metric-label",
+      "foreground": "rgb(93, 104, 93)",
+      "background": "rgb(252, 253, 249)",
+      "ratio": 5.7
+    },
+    {
+      "selector": ".offline-badge",
+      "foreground": "rgb(93, 104, 93)",
+      "background": "rgb(245, 246, 240)",
+      "ratio": 5.36
+    }
+  ],
+  "screenshots": [
+    "artifacts/desktop.png",
+    "artifacts/mobile.png",
+    "artifacts/comparison.png",
+    "artifacts/invalid-input.png",
+    "artifacts/keyboard-focus.png",
+    "artifacts/forced-colors.png"
+  ],
+  "status": "passed"
+}
